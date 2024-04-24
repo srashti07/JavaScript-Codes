@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Details</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">View Menu</a>
+        <a href="customer.html">Customer Registration</a>
+        <a href="order.html">Place an Order</a>
+    </div>
+    <!-- Write drop down list code here  -->
+    <div class="filter-categories">
+        <label for="category">Filter by Category</label>
+        <select name="category" id="category" >
+            <option value="all" selected>All</option>
+            <option value="starters">Starters</option>
+            <option value="desserts">Desserts</option>
+            <option value="beverages">beverages</option>
+            <option value="main-course">Main Course</option>
+        </select>
+    </div>
+    <div class="filter-area">
+        <table>
+            <thead>
+                <th>Item Name</th>
+                <th>Price</th>
+            </thead>
+            <tbody id="filter-menu" class="filer-menu"></tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

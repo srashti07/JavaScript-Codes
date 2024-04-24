@@ -1,0 +1,32 @@
+#note-input-panel{
+    width: 30vw;
+    margin: auto;
+    margin-top: 30px;
+    
+} 
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+#note-container{
+    /* margin: auto; */
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+.note-card {
+    border: 1px solid gray; 
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px; 
+    /* position: relative; */
+    
+}
+
+.delete-button{
+    background-color: #007fff;
+    color: white;
+    border: 0;
+}

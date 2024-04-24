@@ -1,0 +1,18 @@
+HTTP Request \\Delete movie by id 501,Delete movie by id 550
+1) Delete movie by id 501
+URL: http://localhost:3000/movies/501
+METHOD: DELETE
+HTTP Response
+---------------
+Status Code: 200
+Status Message: OK
+Body: {}
+
+2) Delete movie by id 550
+URL: http://localhost:3000/movies?id=550
+METHOD: DELETE
+HTTP Response
+-----------------
+Status Code: 404
+Status Message: Not Found
+Body: {}

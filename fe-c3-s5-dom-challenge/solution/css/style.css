@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #351cd6;
+    color: skyblue;
+    padding: 20px;
+    font-size: 2em;
+}
+
+
+.order-details-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    
+}
+
+.order-details-box label {
+    
+    font-weight: lighter;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#addOrderLabel {
+    display: inline-block;
+    margin-right: 10px;
+    color: grey;
+    font-weight: lighter;
+    vertical-align: middle; /* Align the label vertically in the middle */
+}
+
+/* Style for "+" button */
+#addOrderButton {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    vertical-align: middle; /* Align the button vertically in the middle */
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.order-item input {
+    margin-right: 10px;
+}
+
+#orderItemsContainer {
+    margin-top: 20px;
+}

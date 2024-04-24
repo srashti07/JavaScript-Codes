@@ -1,0 +1,191 @@
+HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,Add new customer,Update customer details
+
+1) Fetch all customer details
+URL: http://localhost:3001/customers
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 1,
+        "name": "David",
+        "email": "david@gmail.com",
+        "phoneNumber": "+11527896543",
+        "address": {
+            "streetName": "Court Street",
+            "streetNo": "123",
+            "postalCode": "2617"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Jessica",
+        "email": "Jessica@live.com",
+        "phoneNumber": "+11523456732",
+        "address": {
+            "streetName": "Bellevue Square",
+            "streetNo": "378",
+            "postalCode": "98004"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+]
+
+2) Fetch Customer by ID
+URL: http://localhost:3001/customers?id=2
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 2,
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    }
+]
+
+3) Fetch Customer by Name
+URL: http://localhost:3001/customers?name=Paul
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 5,
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+]
+
+4) Fetch Customer by Email
+URL: http://localhost:3001/customers?email=Jennifer@yahoo.com
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 3,
+        "name": "Jennifer",
+        "email": "Jennifer@yahoo.com",
+        "phoneNumber": "+11525432178",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "902",
+            "postalCode": "96815"
+        }
+    }
+]
+
+5) Add new customer
+URL: http://localhost:3001/customers
+METHOD: POST
+"Request Body: raw json 		",,,,,,
+"Content Type: application/json	",,,,,,
+Body: [
+    {
+        "id": 6,
+        "name": "Joseph",
+        "email": "Joseph@yahoo.com",
+        "phoneNumber": "+11525433469",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "903",
+            "postalCode": "96815"
+        }
+    }
+]
+HTTP Response,,,,,,
+Status Code: 201
+Status Message: Created
+Body: [
+    {
+        "id": 6,
+        "name": "Joseph",
+        "email": "Joseph@yahoo.com",
+        "phoneNumber": "+11525433469",
+        "address": {
+            "streetName": "Beachwalk",
+            "streetNo": "903",
+            "postalCode": "96815"
+        }
+    }
+]
+
+6) Update customer details
+URL: http://localhost:3001/customers/1
+METHOD: PUT
+"Request Body: raw json 		",,,,,,
+"Content Type: application/json	",,,,,,
+Body: {
+        "id": 1,
+        "name": "David Richard",
+        "email": "david101@gmail.com",
+        "phoneNumber": "+11527896678",
+        "address": {
+            "streetName": "Regan Street",
+            "streetNo": "123",
+            "postalCode": "2617"
+        }
+    }
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: {
+    "id": 1,
+    "name": "David Richard",
+    "email": "david101@gmail.com",
+    "phoneNumber": "+11527896678",
+    "address": {
+        "streetName": "Regan Street",
+        "streetNo": "123",
+        "postalCode": "2617"
+    }
+}

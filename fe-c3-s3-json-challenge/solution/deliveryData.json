@@ -1,0 +1,77 @@
+[
+    {
+        "deliveredBy": "Emma Smith",
+        "orderNumber": 434324,
+        "customerName": "Camila Garcia",
+        "phoneNumbers": "+12052345876",
+        "customerAddress": {
+            "streetNo": "252a",
+            "streetName": "Hale Hall",
+            "city": "Huntsville",
+            "state": "Alabama"
+        },
+        "tipAmount": 10,
+        "customerRating": 4.5,
+        "outletRating": 3
+    },
+    {
+        "deliveredBy": "Emma Smith",
+        "orderNumber": 665324,
+        "customerName": "Ella Rodriguez",
+        "phoneNumbers": "+12052345310",
+        "customerAddress": {
+            "streetNo": "253a",
+            "streetName": "Cooper Hill",
+            "city": "Huntsville",
+            "state": "Alabama"
+        },
+        "tipAmount": 15,
+        "customerRating": 5,
+        "outletRating": 4
+    },
+    {
+        "deliveredBy": "Richard Jones",
+        "orderNumber": 458899,
+        "customerName": "Gary Thomas",
+        "phoneNumbers": "+12652349712",
+        "customerAddress": {
+            "streetNo": "112c",
+            "streetName": "Baxter Parkway",
+            "city": "San Jose",
+            "state": "California"
+        },
+        "tipAmount": 5,
+        "customerRating": 3,
+        "outletRating": 3
+    },
+    {
+        "deliveredBy": "Richard Jones",
+        "orderNumber": 620899,
+        "customerName": "Violet Clark",
+        "phoneNumbers": "+13152119733",
+        "customerAddress": {
+            "streetNo": "112d",
+            "streetName": "Ridgeway Paddock",
+            "city": "San Jose",
+            "state": "California"
+        },
+        "tipAmount": 5,
+        "customerRating": 3.5,
+        "outletRating": 4
+    },
+    {
+        "deliveredBy": "Richard Jones",
+        "orderNumber": 886210,
+        "customerName": "Gianna Miller",
+        "phoneNumbers": "+12752322396",
+        "customerAddress": {
+            "streetNo": "607a",
+            "streetName": "Eastern Passage",
+            "city": "Boston",
+            "state": "Massachusetts"
+        },
+        "tipAmount": 15,
+        "customerRating": 5,
+        "outletRating": 4.5
+    }
+]

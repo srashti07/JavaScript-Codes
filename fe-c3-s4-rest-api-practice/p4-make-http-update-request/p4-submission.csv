@@ -1,0 +1,106 @@
+"HTTP Request		",To update movie for id 514,To update movie for id 500
+1) To update movie for id 514
+"URL: http://localhost:3000/movies/514		",,
+"METHOD: PUT	",,
+"Request Body: raw json 		",,
+"Content Type: application/json	",,
+Body: {
+	"id" : 514,
+    "movieTitle" : "Father of the Bride",
+    "yearOfRelease": 2021,
+    "director" : "Aly Alazraki",
+    "actor-1" : {
+        "actorName" : "Andy Garcia",
+        "onScreenName" : "Billy Herrera"
+    },
+    "actor-2" : {
+        "actorName" : "Gloria Estefan",
+        "onScreenName" : "Ingrid Herrera"
+    },
+    "actor-3" : {
+        "actorName" : "Ardia Arjona",
+        "onScreenName" : "Sofia Herrera"
+    },
+    "rating" : 5.9,
+    "genre" : "Adventure",
+    "isOnOtt" : true,
+    "Ott" : "Netflix"
+}
+"HTTP Response		",,
+"Status Code: 200		",,
+"Status Message: OK	",,
+Body: {
+    "id": 514,
+    "movieTitle": "Father of the Bride",
+    "yearOfRelease": 2021,
+    "director": "Aly Alazraki",
+    "actor-1": {
+        "actorName": "Andy Garcia",
+        "onScreenName": "Billy Herrera"
+    },
+    "actor-2": {
+        "actorName": "Gloria Estefan",
+        "onScreenName": "Ingrid Herrera"
+    },
+    "actor-3": {
+        "actorName": "Ardia Arjona",
+        "onScreenName": "Sofia Herrera"
+    },
+    "rating": 5.9,
+    "genre": "Adventure",
+    "isOnOtt": true,
+    "Ott": "Netflix"
+}
+
+1) To update movie for id 500
+"URL: http://localhost:3000/movies		",,
+"METHOD: POST	",,
+"Request Body: raw json 		",,
+"Content Type: application/json	",,
+Body: {
+	"id" : 500,
+    "movieTitle" : "Top Gun",
+    "yearOfRelease": 1986,
+    "director" : "Tony Scott",
+    "actor-1" : {
+        "actorName" : "Tom Cruise",
+        "onScreenName" : "Maverick"
+    },
+    "actor-2" : {
+        "actorName" : "Tim Robbins",
+        "onScreenName" : "Merlin"
+    },
+    "actor-3" : {
+        "actorName" : "McGillis",
+        "onScreenName" : "Charlie"
+    },
+    "rating" : 6.9,
+    "genre" : "Action",
+    "isOnOtt" : true,
+	"Ott": "Prime Video"
+}
+"HTTP Response		",,
+"Status Code: 201		",,
+"Status Message: Created	",,
+Body: {
+    "id": 500,
+    "movieTitle": "Top Gun",
+    "yearOfRelease": 1986,
+    "director": "Tony Scott",
+    "actor-1": {
+        "actorName": "Tom Cruise",
+        "onScreenName": "Maverick"
+    },
+    "actor-2": {
+        "actorName": "Tim Robbins",
+        "onScreenName": "Merlin"
+    },
+    "actor-3": {
+        "actorName": "McGillis",
+        "onScreenName": "Charlie"
+    },
+    "rating": 6.9,
+    "genre": "Action",
+    "isOnOtt": true,
+    "Ott": "Prime Video"
+}

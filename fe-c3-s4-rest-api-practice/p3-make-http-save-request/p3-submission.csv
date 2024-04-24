@@ -1,0 +1,107 @@
+HTTP Request- For Adding new movie with id 514,For Adding new movie with id 503
+URL: http://localhost:3000/movies
+METHOD: POST
+Request Body: raw json
+Content Type: application/json
+Body: {
+	"id" : 514,
+    "movieTitle" : "Father of the Bride",
+    "yearOfRelease": 2021,
+    "director" : "Aly Alazraki",
+    "actor-1" : {
+        "actorName" : "Andy Garcia",
+        "onScreenName" : "Billy Herrera"
+    },
+    "actor-2" : {
+        "actorName" : "Gloria Estefan",
+        "onScreenName" : "Ingrid Herrera"
+    },
+    "actor-3" : {
+        "actorName" : "Ardia Arjona",
+        "onScreenName" : "Sofia Herrera"
+    },
+    "rating" : 5.9,
+    "genre" : "Adventure",
+    "isOnOtt" : false
+}
+HTTP Response
+----------------
+Status Code: 201
+Status Message: Created
+Body: [
+    {
+        "id": 514,
+        "movieTitle": "Father of the Bride",
+        "yearOfRelease": 2021,
+        "director": "Aly Alazraki",
+        "actor-1": {
+            "actorName": "Andy Garcia",
+            "onScreenName": "Billy Herrera"
+        },
+        "actor-2": {
+            "actorName": "Gloria Estefan",
+            "onScreenName": "Ingrid Herrera"
+        },
+        "actor-3": {
+            "actorName": "Ardia Arjona",
+            "onScreenName": "Sofia Herrera"
+        },
+        "rating": 5.9,
+        "genre": "Adventure",
+        "isOnOtt": false
+    }
+]
+
+2) For Adding new movie with id 503
+URL: http://localhost:3000/movies/503
+METHOD: POST
+Request Body: raw json
+Content Type: application/json
+Body: {
+	"id" : 503,
+    "movieTitle" : "Spiderhead",
+    "yearOfRelease": 2021,
+    "director" : "Joseph Kosinski",
+    "actor-1" : {
+        "actorName" : "Chris Hemsworth",
+        "onScreenName" : "Abnesti"
+    },
+    "actor-2" : {
+        "actorName" : "Miles Teller",
+        "onScreenName" : "Jeff"
+    },
+    "actor-3" : {
+        "actorName" : "Jumee Smollett",
+        "onScreenName" : "Lizzy"
+    },
+    "rating" : 5.4,
+    "genre" : "Action",
+    "isOnOtt" : false
+}
+HTTP Response
+----------------
+Status Code: 200
+Status Message: OK
+Body: [
+{
+    "id": 503,
+    "movieTitle": "Spiderhead",
+    "yearOfRelease": 2021,
+    "director": "Joseph Kosinski",
+    "actor-1": {
+        "actorName": "Chris Hemsworth",
+        "onScreenName": "Abnesti"
+    },
+    "actor-2": {
+        "actorName": "Miles Teller",
+        "onScreenName": "Jeff"
+    },
+    "actor-3": {
+        "actorName": "Jumee Smollett",
+        "onScreenName": "Lizzy"
+    },
+    "rating": 5.4,
+    "genre": "Action",
+    "isOnOtt": false
+}
+]

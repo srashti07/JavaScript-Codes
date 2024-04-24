@@ -1,0 +1,74 @@
+/* Write style sheet here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1 {
+    background-color: palevioletred;
+    color: darkred;
+    padding: 10px;
+}
+
+.container {
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-right: 300px;
+    padding: 10px;
+    font-size: x-large;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#addItemBtn {
+    border-radius: 50%;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.itemField {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#saveOrderBtn {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 800px;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#table{
+    margin-left: 10px;
+}
+.orderdetails{
+    padding-left: 100px;
+}
+
+.mb-3 {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.itemField {
+    height: 30px;
+    width: 250px; 
+    margin-bottom: 50px;
+}

@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration Form </title>
+    <link rel="stylesheet" href="./css/customer.css">
+    <link rel="stylesheet" href="./css/nav.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">View Menu</a>
+        <a href="customer.html">Customer Registration</a>
+        <a href="order.html">Place an Order</a>
+    </div>
+    <!-- Add HTML5 validations for the fields as per the requirements stated in the README -->
+    <div class="form">
+        <h4>Fill up Customer Details here</h4>
+        <div>
+            <label for="custID">Customer Id:</label>
+            <input type="number" name="formInput" id="custID" >
+        </div>
+        <div>
+            <label for="name">Customer Name:</label>
+            <input type="text" name="formInput" id="name" >
+        </div>
+        <div>
+            <label for="custPasword">Password:</label>
+            <input type="password" name="formInput" id="custPasword" >
+        </div>
+        <div>
+            <label for="custConfirmPassword">Confirm Password:</label>
+            <input type="password" name="formInput" id="custConfirmPassword"  >
+        </div>
+        <div>
+            <label for="email">Email Id:</label>
+            <input type="email" name="formInput" id="email" >
+            
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" name="formInput" id="contact" >
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="formInput" rows="4" cols="30" ></textarea >
+        </div>
+        <div>
+            <button type="button" onclick="submitCustomerDetail(event)">Register</button>
+        <div class="message" id="message-success"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/customer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+HTTP Request,View all orders,View all orders based on specific date,View all orders placed by a specific customer,Accept Order details,Modify Order,Cancel Order
+
+1) View all orders
+URL: http://localhost:3002/orders
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 601,
+        "orderDate": "06-22-2022",
+        "items": [
+            {
+                "itemName": "Berry Blast",
+                "price": 1.72
+            },
+            {
+                "itemName": "Emilgrana & Mushroom Dip",
+                "price": 41.4
+            }
+        ],
+        "customer": {
+            "name": "Mary",
+            "email": "mary@gmail.com",
+            "phoneNumber": "+11524449876",
+            "address": {
+                "streetName": "Scottsdale Kierland",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    },
+    {
+        "id": 602,
+        "orderDate": "06-24-2022",
+        "items": [
+            {
+                "itemName": "Potato Wedges",
+                "price": 42.99
+            },
+            {
+                "itemName": "Cheese Burst Pizza",
+                "price": 50
+            },
+            {
+                "itemName": "Oreo Monster Shake",
+                "price": 3.78
+            }
+        ],
+        "customer": {
+            "name": "Paul",
+            "email": "Paul@gmail.com",
+            "phoneNumber": "+11526789543",
+            "address": {
+                "streetName": "Buena Vista Drive",
+                "streetNo": "A-498",
+                "postalCode": "32830"
+            }
+        }
+    },
+    {
+        "id": 603,
+        "orderDate": "06-25-2022",
+        "items": [
+            {
+                "itemName": "Mexican Delight Pizza",
+                "price": 68
+            }
+        ],
+        "customer": {
+            "name": "Jennifer",
+            "email": "Jennifer@yahoo.com",
+            "phoneNumber": "+11525432178",
+            "address": {
+                "streetName": "Beachwalk",
+                "streetNo": "902",
+                "postalCode": "96815"
+            }
+        }
+    },
+    {
+        "id": 604,
+        "orderDate": "06-27-2022",
+        "items": [
+            {
+                "itemName": "Berry Blast",
+                "price": 1.72
+            },
+            {
+                "itemName": "Garlic Bread Mozzarella",
+                "price": 45.99
+            },
+            {
+                "itemName": "Risotto Con Funghi Veg",
+                "price": 75
+            }
+        ],
+        "customer": {
+            "name": "Mary",
+            "email": "mary@gmail.com",
+            "phoneNumber": "+11524449876",
+            "address": {
+                "streetName": "Scottsdale Kierland",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+    },
+    {
+        "id": 605,
+        "orderDate": "06-29-2022",
+        "items": [
+            {
+                "itemName": " Combo of 2 Veg Pizzas",
+                "price": 80
+            }
+        ],
+        "customer": {
+            "name": "David",
+            "email": "david@gmail.com",
+            "phoneNumber": "+11527896543",
+            "address": {
+                "streetName": "Court Street",
+                "streetNo": "123",
+                "postalCode": "2617"
+            }
+        }
+    }
+]
+
+2) View all orders based on specific date
+URL: http://localhost:3002/orders?orderDate=06-24-2022
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 602,
+        "orderDate": "06-24-2022",
+        "items": [
+            {
+                "itemName": "Potato Wedges",
+                "price": 42.99
+            },
+            {
+                "itemName": "Cheese Burst Pizza",
+                "price": 50
+            },
+            {
+                "itemName": "Oreo Monster Shake",
+                "price": 3.78
+            }
+        ],
+        "customer": {
+            "name": "Paul",
+            "email": "Paul@gmail.com",
+            "phoneNumber": "+11526789543",
+            "address": {
+                "streetName": "Buena Vista Drive",
+                "streetNo": "A-498",
+                "postalCode": "32830"
+            }
+        }
+    }
+]
+
+3) View all orders placed by a specific customer
+URL: http://localhost:3002/orders?customer.name=David
+METHOD: GET
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: [
+    {
+        "id": 605,
+        "orderDate": "06-29-2022",
+        "items": [
+            {
+                "itemName": " Combo of 2 Veg Pizzas",
+                "price": 80
+            }
+        ],
+        "customer": {
+            "name": "David",
+            "email": "david@gmail.com",
+            "phoneNumber": "+11527896543",
+            "address": {
+                "streetName": "Court Street",
+                "streetNo": "123",
+                "postalCode": "2617"
+            }
+        }
+    }
+]
+
+4) Accept Order details
+URL: http://localhost:3002/orders
+METHOD: PUT
+"Request Body: raw json 		",,,,,,
+"Content Type: application/json	",,,,,,
+Body: {
+        "id": 606,
+        "orderDate": "06-30-2022",
+        "items": [
+            {
+                "itemName": "Chocolate Brownie",
+                "price": 75
+            },
+            {
+                "itemName": "Emilgrana & Mushroom Dip",
+                "price": 41.4
+            }
+        ],
+        "customer": {
+            "name": "Mary",
+            "email": "mary@gmail.com",
+            "phoneNumber": "+11524449876",
+            "address": {
+                "streetName": "Scottsdale Kierland",
+                "streetNo": "100",
+                "postalCode": "85254"
+            }
+        }
+}
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: {
+    "id": 606,
+    "orderDate": "06-30-2022",
+    "items": [
+        {
+            "itemName": "Chocolate Brownie",
+            "price": 75
+        },
+        {
+            "itemName": "Emilgrana & Mushroom Dip",
+            "price": 41.4
+        }
+    ],
+    "customer": {
+        "name": "Mary",
+        "email": "mary@gmail.com",
+        "phoneNumber": "+11524449876",
+        "address": {
+            "streetName": "Scottsdale Kierland",
+            "streetNo": "100",
+            "postalCode": "85254"
+        }
+    }
+}
+
+5) Modify Order
+URL: http://localhost:3002/orders/602
+METHOD: PUT
+"Request Body: raw json 		",,,,,,
+"Content Type: application/json	",,,,,,
+Body: {
+        "id": 602,
+        "orderDate": "06-25-2022",
+        "items": [
+            {
+                "itemName": "Potato Wedges",
+                "price": 42.99
+            },
+            {
+                "itemName": "Extra Cheese Burst Pizza",
+                "price": 60
+            },
+            {
+                "itemName": "Oreo Monster Shake",
+                "price": 3.78
+            }
+        ],
+        "customer": {
+            "name": "Paul",
+            "email": "Paul@gmail.com",
+            "phoneNumber": "+11526789543",
+            "address": {
+                "streetName": "Buena Vista Drive",
+                "streetNo": "A-498",
+                "postalCode": "32830"
+            }
+        }
+    }
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: {
+    "id": 602,
+    "orderDate": "06-25-2022",
+    "items": [
+        {
+            "itemName": "Potato Wedges",
+            "price": 42.99
+        },
+        {
+            "itemName": "Extra Cheese Burst Pizza",
+            "price": 60
+        },
+        {
+            "itemName": "Oreo Monster Shake",
+            "price": 3.78
+        }
+    ],
+    "customer": {
+        "name": "Paul",
+        "email": "Paul@gmail.com",
+        "phoneNumber": "+11526789543",
+        "address": {
+            "streetName": "Buena Vista Drive",
+            "streetNo": "A-498",
+            "postalCode": "32830"
+        }
+    }
+}
+
+6) Cancel Order
+URL: http://localhost:3002/orders/603
+METHOD: DELETE
+HTTP Response,,,,,,
+Status Code: 200
+Status Message: OK
+Body: {}
